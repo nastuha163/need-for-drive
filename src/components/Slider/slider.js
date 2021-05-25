@@ -10,7 +10,7 @@ import './slider.scss';
 const items = [
   {
     id: 1,
-    src: '/img/Slider_1.png',
+    src: 'img/Slider_1.png',
     altText: 'Slide 1',
     caption: 'Slide 1',
     hedder: 'Бесплатная парковка',
@@ -18,7 +18,7 @@ const items = [
   },
   {
     id: 2,
-    src: '/img/Slider_2.png',
+    src: 'img/Slider_2.png',
     altText: 'Slide 2',
     caption: 'Slide 2',
     hedder: 'Страховка',
@@ -26,7 +26,7 @@ const items = [
   },
   {
     id: 3,
-    src: '/img/Slider_3.png',
+    src: 'img/Slider_3.png',
     altText: 'Slide 3',
     caption: 'Slide 3',
     hedder: 'Бензин',
@@ -35,7 +35,7 @@ const items = [
   },
   {
     id: 4,
-    src: '/img/Slider_4.png',
+    src: 'img/Slider_4.png',
     altText: 'Slide 4',
     caption: 'Slide 4',
     hedder: 'Обслуживание',

@@ -5,7 +5,7 @@ function MainPage() {
         <div className='wraper'>
             <div className='logo'> Need for drive </div>
             <div className='map'>
-                <div className='map-page'href="URL" src='/img/Telegram_white.svg' alt="map img" > </div>
+                <div className='map-page'href="URL" src='img/Telegram_white.svg' alt="map img" > </div>
                 <div className='map-name'> Ульяновск </div>
             </div>
 
