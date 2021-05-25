@@ -1,0 +1,31 @@
+.wrapper {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.left_container {
+  width: 50%;
+}
+
+.main_page {
+  width: 100%;
+  height: 100%;
+  left: 64px;
+  mix-blend-mode: normal;
+}
+
+.menu {
+  position: absolute;
+  width: 64px;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  background: #151b1f;
+}
+
+.slider {
+  width: 50%;
+  height: 100%;
+}

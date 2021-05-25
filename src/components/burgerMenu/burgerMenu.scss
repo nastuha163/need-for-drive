@@ -1,0 +1,76 @@
+.burger-menu-btn-open, .burger-menu-btn-close {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    left: 16px;
+    top: 32px;
+    cursor: pointer;
+  }
+  
+  .language {
+    position: absolute;
+    left: 21px;
+    top: 95%;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 15px;
+    color: #0ec261;
+  }
+  
+  .fone {
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    margin: 0;
+    max-width: 50% !important;
+    background: rgba(21, 27, 31, 0.81);
+  }
+  
+  .menu_modal {
+    width: 500%;
+    background: #111518;
+  }
+  
+  .buttons-burger {
+    position: relative;
+    width: 560px;
+    left: 128px;
+    margin-top: 307px;
+  
+    /* font-family: Roboto; */
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 37px;
+    padding-left: 0px;
+  }
+  
+  .button-burger {
+    padding-top: 25px;
+    color: #ffffff;
+  
+    &:hover {
+      color: #0ec261;
+    }
+  }
+  
+  .icons-burger {
+    position: relative;
+    margin-top: 38px;
+    height: 32px;
+    left: 128px;
+    fill: white;
+  
+  }
+  
+  .icon-burger {
+    margin-right: 24px;
+    fill: #ffffff;
+  
+    &:hover {
+      color: #0ec261;
+    }
+  }

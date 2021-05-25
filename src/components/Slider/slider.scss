@@ -1,0 +1,107 @@
+.custom-tag {
+    max-width: 100%;
+    height: 100%;
+    background: black;
+  }
+  
+  .slider__img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .hedder {
+    position: absolute;
+    width: 421px;
+    height: 100%;
+    left: 96px;
+    top: 237px;
+  
+    /* font-family: Roboto; */
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    color: #ffffff;
+  }
+  
+  .pointer {
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    left: 1393px;
+    top: 608px;
+  }
+  
+  .img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+  }
+  
+  .button {
+    position: absolute;
+    width: 164px;
+    height: 48px;
+    left: 96px;
+    top: 396px;
+  }
+  
+  .text {
+    position: absolute;
+    width: 495px;
+    height: 24px;
+    left: 96px;
+    top: 292px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 100%;
+  
+    /* identical to box height, or 24px */
+  
+    /* Gray_light */
+  
+    color: #eeeeee;
+  }
+  
+  .modal-content {
+    background-color: transparent;
+    border-bottom: none;
+  }
+  
+  .carousel .carousel-indicators {
+    li {
+      background-color: #EEEEEE;
+      width: 8px;
+      height: 8px;
+      border-radius: 10px;
+      margin-right: 8px;
+    }
+  
+    .active {
+      background-color: #0EC261;
+    }
+  
+    li {
+      &:last-child {
+        margin-right: 0px;
+      }
+  
+      &:hover {
+        border: 1px solid #000000;
+      }
+    }
+  }
+  
+  .carousel-control-next, .carousel-control-prev {
+    width: 64px;
+  }
+  
+  .carousel-control-next:hover, .carousel-control-prev:hover {
+    background: #0EC261;
+    opacity: 0.2;
+    width: 64px;
+  }
