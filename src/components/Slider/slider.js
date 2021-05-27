@@ -3,7 +3,7 @@ import Slider_1 from '../img/Slider_1.svg';
 import Slider_2 from '../img/Slider_2.svg';
 import Slider_3 from '../img/Slider_3.svg';
 import Slider_4 from '../img/Slider_4.svg';
-import pointer from '../icons/Pointer.svg';
+
 
 import {
   Carousel,
@@ -84,10 +84,8 @@ const Slider = (props) => {
       <CarouselItem className="custom-tag" tag="div" key={item.id}
         onExiting={() => setAnimating(true)}
         onExited={() => setAnimating(false)}>
-        <div>
-          <div className={item.className}>
-          </div>
-          <div>
+        <div className='carousel-block-info'>
+          <div className='carousel-block-info__content'>
             <div>
               <div className='hedder'>{item.heder}</div>
               <p className='text'>{item.text} </p>
@@ -95,6 +93,7 @@ const Slider = (props) => {
             <button className={item.color}>Подробнее</button>
           </div>
         </div>
+        <div className={item.className}></div>
       </CarouselItem>
     );
   });

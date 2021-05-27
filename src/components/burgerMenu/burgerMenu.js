@@ -1,10 +1,8 @@
 import './burgerMenu.scss';
 import React, { useState } from 'react';
 import { Modal } from 'reactstrap';
-import img from '../icons/map.svg';
-import Telegram from '../icons/Telegram_white.svg';
-import Facebook from '../icons/Facebook_white.svg';
-import Instagram from '../icons/Instagram_white.svg'
+import open from '../icons/menu_open.svg';
+import close from '../icons/menu_close.svg';
 
 const BurgerMenu = () => {
 
@@ -12,26 +10,31 @@ const BurgerMenu = () => {
     const toggle = () => setModal(!modal);
 
     return (
-        <div>
-            <img className='burger-menu-btn-open' src='img/menu_btn.png' alt="Open menu" onClick={toggle} />
-            <h5 className='language'>Eng</h5>
+        <>
+            <img className='burger-menu-btn-open' src={open} alt="Open menu" onClick={toggle} />
+            <div className='language'>Eng</div>
             <Modal className='menu_modal fone' isOpen={modal} toggle={toggle} >
-                <img className='burger-menu-btn-close' onClick={toggle} src='img/x.png' alt="Close menu" />
+                <img className='burger-menu-btn-close' onClick={toggle} src={close} alt="Close menu" />
                 <div className='buttons-burger'>
-                    <div className='button-burger' href="URL"> ПАРКОВКА</div>
-                    <div className='button-burger' href="URL"> СТРАХОВКА</div>
-                    <div className='button-burger' href="URL"> БЕНЗИН </div>
-                    <div className='button-burger' href="URL"> ОБСЛУЖИВАНИЕ </div>
+                    <div className='button-burger'>ПАРКОВКА</div>
+                    <div className='button-burger'>СТРАХОВКА</div>
+                    <div className='button-burger'>БЕНЗИН</div>
+                    <div className='button-burger'>ОБСЛУЖИВАНИЕ</div>
                 </div>
                 <div className='icons-burger'>
-                    <img className='icon-burger' href="URL" src={Telegram} alt="Telegram" />
-                    <img className='icon-burger' href="URL" src={Facebook} alt="Facebook" />
-                    <img className='icon-burger' href="URL" src={Instagram} alt="Instagram" />
+                    <a href="javascript:void(0)">
+                        <i className="burger__icon telegram_icon"></i>
+                    </a>
+                    <a href="javascript:void(0)">
+                        <i className="burger__icon facebook_icon"></i>
+                    </a>
+                    <a href="javascript:void(0)">
+                        <i className="burger__icon instagram_icon"></i>
+                    </a>
                 </div>
             </Modal>
-        </div>
+        </>
     );
 }
-
 
 export default BurgerMenu;

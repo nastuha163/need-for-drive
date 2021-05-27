@@ -11,7 +11,7 @@ function App() {
         <BurgerMenu />
       </div>
       <div className='right_container'>
-        <div className='main_page'>
+        <div className='main-page'>
           <MainPage />
         </div>
         <div className='slider'>
@@ -22,24 +22,5 @@ function App() {
 
   );
 }
-
-// function App() {
-//   return (
-//     <div className="wrapper">
-//       <div className="left_container">
-//         <div className='menu'>
-//           <BurgerMenu/>
-//         </div>
-//         <div className='main_page'>
-//           <MainPage />
-//         </div>
-//       </div>
-//       <div className='slider'>
-//         {/* <Slider /> */}
-//       </div>
-//     </div>
-
-//   );
-// }
 
 export default App;
