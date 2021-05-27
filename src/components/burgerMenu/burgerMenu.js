@@ -1,6 +1,10 @@
 import './burgerMenu.scss';
 import React, { useState } from 'react';
 import { Modal } from 'reactstrap';
+import img from '../icons/map.svg';
+import Telegram from '../icons/Telegram_white.svg';
+import Facebook from '../icons/Facebook_white.svg';
+import Instagram from '../icons/Instagram_white.svg'
 
 const BurgerMenu = () => {
 
@@ -20,13 +24,14 @@ const BurgerMenu = () => {
                     <div className='button-burger' href="URL"> ОБСЛУЖИВАНИЕ </div>
                 </div>
                 <div className='icons-burger'>
-                    <img className='icon-burger' href="URL" src='img/Telegram_white.svg' alt="Telegram" />
-                    <img className='icon-burger' href="URL" src='img/Facebook_white.svg' alt="Facebook" />
-                    <img href="URL" src='img/Instagram_white.svg' alt="Instagram" />
+                    <img className='icon-burger' href="URL" src={Telegram} alt="Telegram" />
+                    <img className='icon-burger' href="URL" src={Facebook} alt="Facebook" />
+                    <img className='icon-burger' href="URL" src={Instagram} alt="Instagram" />
                 </div>
             </Modal>
         </div>
     );
 }
+
 
 export default BurgerMenu;

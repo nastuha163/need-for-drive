@@ -1,31 +1,42 @@
 .wrapper {
   display: flex;
-  position: absolute;
+  // position: absolute;
   width: 100%;
   height: 100%;
+  min-height: 100vh;
+  // max-height: 100vh;
 }
 
-.left_container {
-  width: 50%;
-}
-
-.main_page {
-  width: 100%;
-  height: 100%;
-  left: 64px;
-  mix-blend-mode: normal;
-}
-
-.menu {
-  position: absolute;
-  width: 64px;
-  height: 100%;
-  left: 0px;
-  top: 0px;
+.menu__left {
+  // position: relative;
+  width: 4%;
+  // height: 100%;
+  // left: 0px;
+  // top: 0px;
   background: #151b1f;
+  // z-index:1;
+}
+
+
+.right_container {
+  position: relative;
+  display: flex;
+  // left: 64px;
+  height: 100%;
+  width: 96%;
+  min-height: 100vh;
+}
+
+.right_container .main_page {
+  width: 50%;
+  position: relative;
+  // mix-blend-mode: normal;
+  // z-index:3;
+   
 }
 
 .slider {
   width: 50%;
-  height: 100%;
+  position: relative;
+  // height: 100%;
 }

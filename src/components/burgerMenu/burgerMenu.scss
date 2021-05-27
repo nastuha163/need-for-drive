@@ -11,9 +11,7 @@
     position: absolute;
     left: 21px;
     top: 95%;
-    font-family: Roboto;
     font-style: normal;
-    font-weight: bold;
     font-size: 13px;
     line-height: 15px;
     color: #0ec261;
@@ -25,7 +23,7 @@
     left: 0px;
     top: 0px;
     margin: 0;
-    max-width: 50% !important;
+    max-width: 52% !important;
     background: rgba(21, 27, 31, 0.81);
   }
   
@@ -63,7 +61,6 @@
     height: 32px;
     left: 128px;
     fill: white;
-  
   }
   
   .icon-burger {
@@ -71,6 +68,6 @@
     fill: #ffffff;
   
     &:hover {
-      color: #0ec261;
+    background-color: #0ec261;
     }
   }

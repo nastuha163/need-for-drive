@@ -1,4 +1,10 @@
 import React, { useState } from 'react';
+import Slider_1 from '../img/Slider_1.svg';
+import Slider_2 from '../img/Slider_2.svg';
+import Slider_3 from '../img/Slider_3.svg';
+import Slider_4 from '../img/Slider_4.svg';
+import pointer from '../icons/Pointer.svg';
+
 import {
   Carousel,
   CarouselItem,
@@ -10,36 +16,43 @@ import './slider.scss';
 const items = [
   {
     id: 1,
-    src: 'img/Slider_1.png',
+    src: Slider_1,
     altText: 'Slide 1',
     caption: 'Slide 1',
-    hedder: 'Бесплатная парковка',
-    text: 'Оставляйте машину на платных городских парковках и разрешенных местах, не нарушая ПДД, а также в аэропортах.'
+    heder: 'Бесплатная парковка',
+    text: 'Оставляйте машину на платных городских парковках и разрешенных местах, не нарушая ПДД, а также в аэропортах.',
+    color: 'color-button-1',
+    className: 'slider__img1'
   },
   {
     id: 2,
-    src: 'img/Slider_2.png',
+    src: Slider_2,
     altText: 'Slide 2',
     caption: 'Slide 2',
-    hedder: 'Страховка',
-    text: 'Полная страховка страховка автомобиля'
+    heder: 'Страховка',
+    text: 'Полная страховка страховка автомобиля',
+    color: 'color-button-2',
+    className: 'slider__img2'
   },
   {
     id: 3,
-    src: 'img/Slider_3.png',
+    src: Slider_3,
     altText: 'Slide 3',
     caption: 'Slide 3',
-    hedder: 'Бензин',
-    text: 'Полный бак на любой заправке города за наш счёт'
-
+    heder: 'Бензин',
+    text: 'Полный бак на любой заправке города за наш счёт',
+    color: 'color-button-3',
+    className: 'slider__img3'
   },
   {
     id: 4,
-    src: 'img/Slider_4.png',
+    src: Slider_4,
     altText: 'Slide 4',
     caption: 'Slide 4',
-    hedder: 'Обслуживание',
-    text: 'Автомобиль проходит еженедельное ТО'
+    heder: 'Обслуживание',
+    text: 'Автомобиль проходит еженедельное ТО',
+    color: 'color-button-4',
+    className: 'slider__img4'
   }
 ];
 
@@ -72,24 +85,26 @@ const Slider = (props) => {
         onExiting={() => setAnimating(true)}
         onExited={() => setAnimating(false)}>
         <div>
-          <img className='slider__img' src={item.src}/>
-          <div className='hedder'>{item.hedder}</div>
-          <p className='text'> {item.text} </p>
+          <div className={item.className}>
+          </div>
+          <div>
+            <div>
+              <div className='hedder'>{item.heder}</div>
+              <p className='text'>{item.text} </p>
+            </div>
+            <button className={item.color}>Подробнее</button>
+          </div>
         </div>
-        <button className='button'>Подробнее</button>
       </CarouselItem>
     );
   });
-
   return (
-    <div>
-      <Carousel activeIndex={activeIndex} next={next} previous={previous} >
-        <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={goToIndex} />
-        {slides}
-        <CarouselControl direction="prev" directionText=" " onClickHandler={previous} />
-        <CarouselControl direction="next" directionText=" " onClickHandler={next} />
-      </Carousel>
-    </div>
+    <Carousel activeIndex={activeIndex} next={next} previous={previous} >
+      <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={goToIndex} />
+      {slides}
+      <CarouselControl direction="prev" directionText=" " onClickHandler={previous} />
+      <CarouselControl direction="next" directionText=" " onClickHandler={next} />
+    </Carousel>
   );
 }
 

@@ -1,13 +1,17 @@
-.wraper {
-    /* position: relative; */
+*{box-sizing: border-box;
+}
+.main-page {
+  position: absolute;
     width: 100%;
     height: 100%;
+    // background-color: #ada2a2;
+    // opacity: 0.5;
   }
   
   .logo {
-    position: relative;
+    position: absolute;
     top: 32px;
-    left: 128px;
+    left: 64px;
     font-style: normal;
     font-weight: bold;
     font-size: 30px;
@@ -16,25 +20,21 @@
   }
   
   .map {
-    position: absolute;
+    position: relative;
     width: 94px;
-    height: 18px;
-  
-    /* left: 521px; */
     top: 39px;
+    margin-left: 595px;
   }
   
   .map-page {
+    padding-right: 8px;
     position: absolute;
-    width: 94px;
     height: 18px;
-    left: 521px;
-    top: 39px;
-  }
+   }
   
   .map-name {
+    padding-left: 20px;
     position: absolute;
-    margin-left: 595px;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -44,9 +44,9 @@
   
   .hero_block {
     position: relative;
-    left: 152px;
+    left: 88px;
     width: 100%;
-    margin-top: 152px;
+    margin-top: 216px;
   }
   
   .heading1 {
@@ -91,8 +91,8 @@
     position: absolute;
     width: 250px;
     height: 48px;
-    left: 128px;
-    top: 487px;
+    left: 64px;
+    margin-top: 271px;
     border-style: none;
     background: linear-gradient(90deg, #0ec261 2.61%, #039f67 112.6%);
     background-blend-mode: darken;
@@ -100,15 +100,15 @@
   }
   
   .footer {
-    position: relative;
-    width: 100%;
-    height: 16px;
-    margin-top: 780px;
+    position: absolute;
+    margin-left: 64px;
+    width: 560px;
+    bottom: 20px;
   }
   
   .footer-left {
-    position: absolute;
-    left: 128px;
+    display:inline;
+    position: relative;
     font-style: normal;
     font-weight: normal;
     font-size: 13px;
@@ -117,8 +117,9 @@
   }
   
   .footer-right {
-    position: absolute;
-    margin-left: 521px;
+    display:inline;
+    position: relative;
+    padding-left: 274px;
     font-style: normal;
     font-weight: normal;
     font-size: 13px;
