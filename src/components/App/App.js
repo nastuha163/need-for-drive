@@ -28,11 +28,11 @@ function App() {
   }
 
   return (
-    <Router>
+    <Router basename="/need-for-drive/">
       <Switch>
-        <Route path='/need-for-drive/' exact component={HomePage} />
-        <Route path='/booking/' exact component={BookingService} />
-        <Redirect to='/need-for-drive/' />
+        <Route path='/' exact component={HomePage} />
+        <Route path='/booking' exact component={BookingService} />
+        <Redirect to='/' />
       </Switch>
     </Router>
   );

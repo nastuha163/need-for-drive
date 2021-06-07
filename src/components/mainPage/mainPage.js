@@ -19,7 +19,7 @@ function MainPage() {
                     <div className='heading3'>Поминутная аренда авто твоего города</div>
                 </div>
                 <button className='button-page' type="button">
-                    <Link to='/booking' className='button-page-text'>Забронировать</Link>
+                    <Link to='booking' className='button-page-text'>Забронировать</Link>
                 </button>
             </div>
             <div className='footer'>

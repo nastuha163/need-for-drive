@@ -42,7 +42,7 @@ export default class BookingService extends Component {
 
 
         return (
-            <Router>
+            <Router basename="/need-for-drive/">
                 <div className='wrapper-booking-service'>
                     <div className='left-menu-booking-service'>
                         <BurgerMenu />
