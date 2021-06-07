@@ -30,9 +30,9 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route path='/' exact component={HomePage} />
+        <Route path='/need-for-drive/' exact component={HomePage} />
         <Route path='/booking/' exact component={BookingService} />
-        <Redirect to='/' />
+        <Redirect to='/need-for-drive/' />
       </Switch>
     </Router>
   );

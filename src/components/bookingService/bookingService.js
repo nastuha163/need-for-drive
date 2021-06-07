@@ -51,9 +51,9 @@ export default class BookingService extends Component {
                         <Header />
                         <div className='booking-block'>
                             <div className='custom-part'>
-                                <Route path='/booking/location' exact component={Location} />
-                                <Route path='/booking/location/modal' exact component={ModelCars} />
-                                <Route path='/booking/location/modal/additionally' exact component={Additionally} />
+                                <Route path='/booking/location/' exact component={Location} />
+                                <Route path='/booking/location/modal/' exact component={ModelCars} />
+                                <Route path='/booking/location/modal/additionally/' exact component={Additionally} />
                                 <Route path='/booking/location/modal/additionally/result' exact component={Result} />
                                 <Redirect to='/booking/' />
                             </div>

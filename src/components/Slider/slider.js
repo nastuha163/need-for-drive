@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import Slider_1 from '../img/Slider_1.svg';
-import Slider_2 from '../img/Slider_2.svg';
-import Slider_3 from '../img/Slider_3.svg';
-import Slider_4 from '../img/Slider_4.svg';
+import Slider_1 from '../img/Slider_1.png';
+import Slider_2 from '../img/Slider_2.png';
+import Slider_3 from '../img/Slider_3.png';
+import Slider_4 from '../img/Slider_4.png';
 
 
 import {
