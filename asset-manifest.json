@@ -1,28 +1,37 @@
 {
   "files": {
-    "main.css": "/need-for-drive/static/css/main.ce68e3a7.chunk.css",
-    "main.js": "/need-for-drive/static/js/main.83253134.chunk.js",
-    "main.js.map": "/need-for-drive/static/js/main.83253134.chunk.js.map",
+    "main.css": "/need-for-drive/static/css/main.b052a6ce.chunk.css",
+    "main.js": "/need-for-drive/static/js/main.cffb6639.chunk.js",
+    "main.js.map": "/need-for-drive/static/js/main.cffb6639.chunk.js.map",
     "runtime-main.js": "/need-for-drive/static/js/runtime-main.cd95576a.js",
     "runtime-main.js.map": "/need-for-drive/static/js/runtime-main.cd95576a.js.map",
     "static/css/2.61b4cb56.chunk.css": "/need-for-drive/static/css/2.61b4cb56.chunk.css",
-    "static/js/2.348966b8.chunk.js": "/need-for-drive/static/js/2.348966b8.chunk.js",
-    "static/js/2.348966b8.chunk.js.map": "/need-for-drive/static/js/2.348966b8.chunk.js.map",
+    "static/js/2.d3b34063.chunk.js": "/need-for-drive/static/js/2.d3b34063.chunk.js",
+    "static/js/2.d3b34063.chunk.js.map": "/need-for-drive/static/js/2.d3b34063.chunk.js.map",
     "index.html": "/need-for-drive/index.html",
     "static/css/2.61b4cb56.chunk.css.map": "/need-for-drive/static/css/2.61b4cb56.chunk.css.map",
-    "static/css/main.ce68e3a7.chunk.css.map": "/need-for-drive/static/css/main.ce68e3a7.chunk.css.map",
-    "static/js/2.348966b8.chunk.js.LICENSE.txt": "/need-for-drive/static/js/2.348966b8.chunk.js.LICENSE.txt",
-    "static/media/burgerMenu.scss": "/need-for-drive/static/media/Telegram_white.e8137bbe.svg",
+    "static/css/main.b052a6ce.chunk.css.map": "/need-for-drive/static/css/main.b052a6ce.chunk.css.map",
+    "static/js/2.d3b34063.chunk.js.LICENSE.txt": "/need-for-drive/static/js/2.d3b34063.chunk.js.LICENSE.txt",
+    "static/media/burgerMenu.scss": "/need-for-drive/static/media/menu_open.cec3097c.svg",
+    "static/media/Rectangle.96309faa.png": "/need-for-drive/static/media/Rectangle.96309faa.png",
     "static/media/slider.scss": "/need-for-drive/static/media/Slider_4.907b3806.svg",
+    "static/media/kia_1.bdb97378.png": "/need-for-drive/static/media/kia_1.bdb97378.png",
+    "static/media/koenigsegg.838c5d0a.png": "/need-for-drive/static/media/koenigsegg.838c5d0a.png",
+    "static/media/lada.55916af8.png": "/need-for-drive/static/media/lada.55916af8.png",
+    "static/media/land_rover.5961e484.png": "/need-for-drive/static/media/land_rover.5961e484.png",
+    "static/media/lotus.d17472d8.png": "/need-for-drive/static/media/lotus.d17472d8.png",
     "static/media/map.dd9d4bed.svg": "/need-for-drive/static/media/map.dd9d4bed.svg",
-    "static/media/menu_close.2990540f.svg": "/need-for-drive/static/media/menu_close.2990540f.svg",
-    "static/media/menu_open.cec3097c.svg": "/need-for-drive/static/media/menu_open.cec3097c.svg"
+    "static/media/mercedes.a9ac86e3.png": "/need-for-drive/static/media/mercedes.a9ac86e3.png",
+    "static/media/mitsubishi.be0683b0.png": "/need-for-drive/static/media/mitsubishi.be0683b0.png",
+    "static/media/nissan.888c7278.png": "/need-for-drive/static/media/nissan.888c7278.png",
+    "static/media/bookingService.scss": "/need-for-drive/static/media/pointer.ce81e742.svg",
+    "static/media/toyota.c4eeba68.png": "/need-for-drive/static/media/toyota.c4eeba68.png"
   },
   "entrypoints": [
     "static/js/runtime-main.cd95576a.js",
     "static/css/2.61b4cb56.chunk.css",
-    "static/js/2.348966b8.chunk.js",
-    "static/css/main.ce68e3a7.chunk.css",
-    "static/js/main.83253134.chunk.js"
+    "static/js/2.d3b34063.chunk.js",
+    "static/css/main.b052a6ce.chunk.css",
+    "static/js/main.cffb6639.chunk.js"
   ]
 }
