@@ -1,8 +1,6 @@
 import './burgerMenu.scss';
 import React, { useState } from 'react';
 import { Modal } from 'reactstrap';
-import open from '../icons/menu_open.svg';
-import close from '../icons/menu_close.svg';
 
 const BurgerMenu = () => {
 
@@ -11,10 +9,10 @@ const BurgerMenu = () => {
 
     return (
         <>
-            <img className='burger-menu-btn-open' src={open} alt="Open menu" onClick={toggle} />
+            <div className='burger-menu-btn-open open_icon' alt="Open menu" onClick={toggle} />
             <div className='language'>Eng</div>
             <Modal className='menu_modal fone' isOpen={modal} toggle={toggle} >
-                <img className='burger-menu-btn-close' onClick={toggle} src={close} alt="Close menu" />
+                <div className='burger-menu-btn-close close_icon' onClick={toggle} alt="Close menu" />
                 <div className='buttons-burger'>
                     <div className='button-burger'>ПАРКОВКА</div>
                     <div className='button-burger'>СТРАХОВКА</div>

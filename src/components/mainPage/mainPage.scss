@@ -26,7 +26,8 @@
   font-weight: bold;
   font-size: 30px;
   line-height: 35px;
-  color: #0ec261;
+  color: #0ec261 !important;
+    text-decoration: none;
 }
 
 .map {
@@ -86,7 +87,8 @@
   font-size: 18px;
   line-height: 21px;
   text-align: center;
-  color: #ffffff;
+  text-decoration: none;
+  color: rgb(255, 255, 255) !important
 }
 
 .button-page {

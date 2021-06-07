@@ -1,11 +1,20 @@
 .burger-menu-btn-open,
 .burger-menu-btn-close {
-  // position: absolute;
   width: 32px;
   height: 32px;
   margin-left: 16px;
   margin-top: 32px;
   cursor: pointer;
+}
+
+
+.open_icon {
+  background-color: #ffffff;
+  mask-image: url("../icons/menu_open.svg");
+}
+.close_icon {
+  background-color: #ffffff;
+  mask-image: url("../icons/menu_close.svg");
 }
 
 .language {
@@ -104,14 +113,25 @@
     font-size: 22px;
     line-height: 26px;
     font-weight: 500;
+    background: #111518;
   }
   .icons-burger {
     left: 28px;
   }
   .burger-menu-btn-open {
-    background: black;
+    background: #111518;
   }
   .language {
     display: none;
   }
+  .open_icon {
+    background-color: #111518;;
+  }
+//   .burger-menu-btn-open,
+//   .burger-menu-btn-close {
+//     width: 28px;
+//     height: 28px;
+//     margin-left: 28px;
+//     text-align:center;
+// }
 }
