@@ -1,0 +1,50 @@
+// @import url('../bookingService.scss');
+
+// .button-booking-service{
+//     color: #0ec261;
+// }
+.wrapper-location {
+    width: 400px;
+    height: 90px;
+    display: flex;
+    margin-right: auto;
+    justify-content: space-between;
+    // background-color: aqua;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    color: #121212;
+}
+
+.header-location {
+    padding-top: 16px;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    width: 27%;
+}
+
+.header-location > .header-location-text {
+    padding-bottom: 16px;
+    margin-right: 13px;
+}
+
+.list-location {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #999999;
+    margin-top: 13px;
+    width: 100%;
+    padding-left: 5px;
+}
+
+.map-location {
+    margin-top: 45px;
+    margin-bottom: 16px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    color: #121212;
+}

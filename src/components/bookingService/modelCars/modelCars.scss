@@ -1,0 +1,71 @@
+// .wrapper-model-cars {
+// }
+
+.buttons-model-cars {
+    display: flex;
+    flex-flow: row nowrap;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    color: #999999;
+}
+
+.cards-model-cars {
+    margin-top: 48px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.forma-for-cards {
+    height: 224px;
+    width: 368px;
+    border: 1px solid #eeeeee;
+}
+.forma-for-cards:hover{
+    border: 1px solid #999999;
+}
+.forma-for-cards:active{
+    border: 1px solid #0EC261;
+}
+
+.cards-img {
+    width: 85%;
+    height: 144px;
+    padding-right: 16px;
+    margin-left: 45px;
+}
+.text-cards-brand {
+    margin-left: 16px;
+    padding-top: 16px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+
+    color: #121212;
+}
+.text-cards-price {
+    margin-top: 16px;
+    margin-left: 16px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #999999;
+}
+
+.point {
+    margin-right: 8px;
+    width: 12px;
+    height: 12px;
+    margin-top: 2px;
+    border-radius: 50%;
+    border: 1px solid #999999;
+}
+
+
+.label-model-cars {
+    margin-left: 16px;
+}

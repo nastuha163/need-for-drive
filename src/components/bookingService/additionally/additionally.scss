@@ -1,0 +1,116 @@
+.wrapper-additionally {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    color: #999999;
+}
+
+.color-block {
+}
+
+.services-additionally {
+    display: flex;
+    flex-direction: column;
+    margin-top: 32px;
+}
+
+.header-additionally {
+    margin-bottom: 8px;
+    color: #121212;
+}
+
+.checkbox-square {
+    margin-top: 8px;
+    margin-right: 5px;
+}
+
+.label-additionally {
+    margin-left: 16px;
+}
+.label-additionally:active {
+    color: #121212;
+}
+.checkbox-round {
+    margin-top: 8px;
+    margin-right: 5px;
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+}
+.checkbox-round:checked {
+    border: 3px solid #0ec261;
+    box-sizing: border-box;
+}
+
+.wrapper-deta {
+    width: 230px;
+    height: 70px;
+    display: flex;
+    margin-right: auto;
+    justify-content: space-between;
+}
+
+.header-date-additionally {
+    padding-top: 16px;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    width: 10%;
+}
+
+.header-date-additionally > .header-date-additionally-text {
+    padding-bottom: 16px;
+    margin-right: 13px;
+    color: black;
+}
+.list-date-additionally {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #999999;
+    margin-top: 13px;
+    width: 100%;
+    padding-left: 5px;
+}
+.list-date-additionally::placeholder{
+    color: #999999;
+}
+
+
+
+
+.checkbox {
+	position:relative;
+	padding-left:20px;
+    padding-top: 8px;
+}
+
+.checkbox input[type=checkbox] {
+	display:none;
+}
+.checkbox label:after {
+	content:'';
+	display:block;
+	height:12px;
+	width:12px;
+	outline:1px solid #999999;
+    margin-top: 3px;
+	position:absolute;
+	top:0;
+	left:0;
+    margin-top: 11px;
+    
+}
+.checkbox input[type=checkbox]:checked + label:after {
+	outline:2px solid #0ec261;
+	content: "\2714";
+    font-size: 14px;
+    color: #030000;
+    line-height: 10px;
+    
+}
