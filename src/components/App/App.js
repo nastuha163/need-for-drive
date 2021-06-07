@@ -5,7 +5,7 @@ import MainPage from '../mainPage';
 import Slider from '../Slider';
 import BookingService from '../bookingService';
 import { BrowserRouter as Router, Redirect, Route, Switch } from 'react-router-dom';
-import BASE_URL from '../../domain_url';
+// import BASE_URL from '../../domain_url';
 
 function App() {
   
@@ -30,8 +30,8 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route path={`${BASE_URL}/`} exact component={HomePage} />
-        <Route path={`${BASE_URL}/booking'`} exact component={BookingService} />
+        <Route path='/' exact component={HomePage} />
+        <Route path='/booking/' exact component={BookingService} />
         <Redirect to='/' />
       </Switch>
     </Router>
