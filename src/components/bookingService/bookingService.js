@@ -77,8 +77,8 @@ export default class BookingService extends Component {
                                 <div className='order'>
                                     <div className='order-header'> Ваш заказ: </div>
                                     <div className='order-list'>
-                                        <div>Пункт выдачи:{this.state.city}</div>
-                                        {/* <div>Адрес {this.state.street}</div> */}
+                                        <div>Пункт выдачи:{this.state.street}</div>
+                                        <div>Адрес {this.state.city}</div>
                                     </div>
                                     <button className='order-button'>Выбрать модель</button>
                                 </div>

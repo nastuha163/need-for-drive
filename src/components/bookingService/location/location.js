@@ -7,8 +7,8 @@ export default class Location extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            city: "fgg",
-            street: "df"
+            city: "",
+            street: ""
         };
         this.onChangeCity = this.onChangeCity.bind(this);
         this.onChangeStreet = this.onChangeStreet.bind(this);
