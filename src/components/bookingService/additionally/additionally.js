@@ -1,7 +1,7 @@
 import React from 'react';
 import './additionally.scss';
 
-function Additionally() {
+const Additionally = () => {
     return (
         <div className='wrapper-additionally'>
             <div className='color-block'>
