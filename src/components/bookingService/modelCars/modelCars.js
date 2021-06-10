@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './modelCars.scss';
 import Car_1 from './imgCars/kia_1.png';
 import Car_2 from './imgCars/koenigsegg.png';

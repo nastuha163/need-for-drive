@@ -1,42 +1,35 @@
-// @import url('../bookingService.scss');
-
-// .button-booking-service{
-//     color: #0ec261;
-// }
 .wrapper-location {
-    width: 400px;
-    height: 90px;
-    display: flex;
+    width: 550px;
     margin-right: auto;
-    justify-content: space-between;
-    // background-color: aqua;
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
     line-height: 16px;
-    color: #121212;
+    color: #000000;
 }
 
-.header-location {
-    padding-top: 16px;
-    display: flex;
-    flex-direction: column;
+.header-location-text {
+    margin-bottom: 16px;
     text-align: right;
-    width: 27%;
+    width: 16%;
 }
 
-.header-location > .header-location-text {
-    padding-bottom: 16px;
-    margin-right: 13px;
-}
+// .input[type="search"]::-ms-clear
+// {
+//     color: yellowgreen;
+//     -webkit-appearance: none;
 
+//     width: 50px;
+//     height: 20px;
+//     background:yellowgreen;
+// }
 .list-location {
     outline: none;
     border: none;
     border-bottom: 1px solid #999999;
-    margin-top: 13px;
-    width: 100%;
     padding-left: 5px;
+    margin-left: 10px;
+    width: 200px;
 }
 
 .map-location {

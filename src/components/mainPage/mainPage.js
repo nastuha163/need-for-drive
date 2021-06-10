@@ -1,14 +1,15 @@
 import './mainPage.scss';
-import img from '../icons/map.svg';
+import React from 'react';
 import { Link } from 'react-router-dom';
+import mapSvg from '../../assets/icons/map.svg';
 
-function MainPage() {
+const MainPage = () => {
     return (
         <>
             <div className='upper-block'>
             <Link to='/' className='logo'>Need for drive</Link>
-                <div className='map'>
-                    <img className='map-page' src={img} alt="map img" />
+                <div type='button' className='map'>
+                    <img className='map-page' src={mapSvg} alt="map img" />
                     <div className='map-name'>Ульяновск</div>
                 </div>
             </div>
@@ -19,7 +20,7 @@ function MainPage() {
                     <div className='heading3'>Поминутная аренда авто твоего города</div>
                 </div>
                 <button className='button-page' type="button">
-                    <Link to='booking' className='button-page-text'>Забронировать</Link>
+                    <Link to='/booking/location' className='button-page-text'>Забронировать</Link>
                 </button>
             </div>
             <div className='footer'>

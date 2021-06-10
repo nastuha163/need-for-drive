@@ -7,14 +7,13 @@
   cursor: pointer;
 }
 
-
 .open_icon {
   background-color: #ffffff;
-  mask-image: url("../icons/menu_open.svg");
+  mask-image: url("../../assets/icons/menu_open.svg");
 }
 .close_icon {
   background-color: #ffffff;
-  mask-image: url("../icons/menu_close.svg");
+  mask-image: url("../../assets/icons/menu_close.svg");
 }
 
 .language {
@@ -86,13 +85,13 @@
   }
 }
 .telegram_icon {
-  mask-image: url("../icons/Telegram_white.svg");
+  mask-image: url("../../assets/icons/Telegram_white.svg");
 }
 .facebook_icon {
-  mask-image: url("../icons/Facebook_white.svg");
+  mask-image: url("../../assets/icons/Facebook_white.svg");
 }
 .instagram_icon {
-  mask-image: url("../icons/Instagram_white.svg");
+  mask-image: url("../../assets/icons/Instagram_white.svg");
 }
 
 @media screen and(max-width:1315px) {
@@ -105,33 +104,39 @@
     max-width: 100% !important;
     background: #111518;
   }
+  .burger-menu-btn-open, 
+  .burger-menu-btn-close {
+    margin-left: 18px;
+  }
+}
+
+:root{
+  --main-bg-color:#111518;
+  --main-size:28px;
 }
 @media screen and(max-width:473px) {
   .buttons-burger {
-    margin-left: 28px;
-    margin-top: 28px;
+    margin-left: var(--main-size);
+    margin-top: var(--main-size);
     font-size: 22px;
     line-height: 26px;
     font-weight: 500;
-    background: #111518;
+    background: var(--main-bg-color);
   }
   .icons-burger {
-    left: 28px;
+    left: var(--main-size);
   }
   .burger-menu-btn-open {
-    background: #111518;
+    background: var(--main-bg-color);
   }
   .language {
     display: none;
   }
   .open_icon {
-    background-color: #111518;;
+    background-color: var(--main-bg-color);
   }
-//   .burger-menu-btn-open,
-//   .burger-menu-btn-close {
-//     width: 28px;
-//     height: 28px;
-//     margin-left: 28px;
-//     text-align:center;
-// }
+  .burger-menu-btn-open, 
+.burger-menu-btn-close {
+  margin-left: 23px;
+}
 }

@@ -1,10 +1,4 @@
-import React, { useState } from 'react';
-import Slider_1 from '../img/Slider_1.png';
-import Slider_2 from '../img/Slider_2.png';
-import Slider_3 from '../img/Slider_3.png';
-import Slider_4 from '../img/Slider_4.png';
-
-
+import React, { useMemo, useState, useCallback } from 'react';
 import {
   Carousel,
   CarouselItem,
@@ -12,12 +6,12 @@ import {
   CarouselIndicators,
 } from 'reactstrap';
 import './slider.scss';
+import "bootstrap/dist/css/bootstrap.min.css";
+
 
 const items = [
   {
     id: 1,
-    src: Slider_1,
-    altText: 'Slide 1',
     caption: 'Slide 1',
     heder: 'Бесплатная парковка',
     text: 'Оставляйте машину на платных городских парковках и разрешенных местах, не нарушая ПДД, а также в аэропортах.',
@@ -26,8 +20,6 @@ const items = [
   },
   {
     id: 2,
-    src: Slider_2,
-    altText: 'Slide 2',
     caption: 'Slide 2',
     heder: 'Страховка',
     text: 'Полная страховка страховка автомобиля',
@@ -36,8 +28,6 @@ const items = [
   },
   {
     id: 3,
-    src: Slider_3,
-    altText: 'Slide 3',
     caption: 'Slide 3',
     heder: 'Бензин',
     text: 'Полный бак на любой заправке города за наш счёт',
@@ -46,8 +36,6 @@ const items = [
   },
   {
     id: 4,
-    src: Slider_4,
-    altText: 'Slide 4',
     caption: 'Slide 4',
     heder: 'Обслуживание',
     text: 'Автомобиль проходит еженедельное ТО',
@@ -56,34 +44,48 @@ const items = [
   }
 ];
 
-const Slider = (props) => {
+const Slider = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [animating, setAnimating] = useState(false);
 
-  const next = () => {
+  const goToNext = () => {
     if (animating) return;
     const nextIndex = activeIndex === items.length - 1 ? 0 : activeIndex + 1;
     setActiveIndex(nextIndex);
   }
 
-  const previous = () => {
+  const goToPrevious = () => {
     if (animating) return;
     const nextIndex = activeIndex === 0 ? items.length - 1 : activeIndex - 1;
     setActiveIndex(nextIndex);
   }
 
   const goToIndex = (newIndex) => {
-    console.log(1)
-    if (animating)
-      return
+    if (animating) return;
     setActiveIndex(newIndex);
   }
 
-  const slides = items.map((item) => {
+
+  const showAnimating = useCallback(  
+      () => {  
+        setAnimating(true) 
+    },
+    [true],  
+  );
+  const removeAnimating = useCallback(  
+      () => {  
+        setAnimating(false) 
+    },
+    [false],  
+  );
+
+  const slides = useMemo(() => items.map((item) => {
     return (
-      <CarouselItem className="custom-tag" tag="div" key={item.id}
-        onExiting={() => setAnimating(true)}
-        onExited={() => setAnimating(false)}>
+      <CarouselItem 
+      onExiting = {() => showAnimating}
+      onExited = {() => removeAnimating}
+      key={item.id}
+      >
         <div className='carousel-block-info'>
           <div className='carousel-block-info__content'>
             <div>
@@ -96,15 +98,23 @@ const Slider = (props) => {
         <div className={item.className}></div>
       </CarouselItem>
     );
-  });
+  })
+  );
   return (
-    <Carousel activeIndex={activeIndex} next={next} previous={previous} >
+    <div>
+    <Carousel
+        activeIndex={activeIndex}
+        next={goToNext}
+        previous={goToPrevious}
+        interval={10000}
+      >
       <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={goToIndex} />
       {slides}
-      <CarouselControl direction="prev" directionText=" " onClickHandler={previous} />
-      <CarouselControl direction="next" directionText=" " onClickHandler={next} />
+      <CarouselControl direction="prev" directionText=" " onClickHandler={goToPrevious} />
+      <CarouselControl direction="next" directionText=" " onClickHandler={goToNext} />
     </Carousel>
+    </div>
   );
-}
+  };
 
 export default Slider;

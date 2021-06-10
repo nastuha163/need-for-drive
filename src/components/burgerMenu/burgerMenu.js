@@ -5,19 +5,19 @@ import { Modal } from 'reactstrap';
 const BurgerMenu = () => {
 
     const [modal, setModal] = useState(false);
-    const toggle = () => setModal(!modal);
+    const goToMenu = () => setModal(!modal);
 
     return (
         <>
-            <div className='burger-menu-btn-open open_icon' alt="Open menu" onClick={toggle} />
-            <div className='language'>Eng</div>
-            <Modal className='menu_modal fone' isOpen={modal} toggle={toggle} >
-                <div className='burger-menu-btn-close close_icon' onClick={toggle} alt="Close menu" />
+            <div className='burger-menu-btn-open open_icon' alt="Open menu" onClick={goToMenu} />
+            <div type='button' className='language'>Eng</div>
+            <Modal className='menu_modal fone' isOpen={modal} toggle={goToMenu} >
+                <div className='burger-menu-btn-close close_icon' onClick={goToMenu} alt="Close menu" />
                 <div className='buttons-burger'>
-                    <div className='button-burger'>ПАРКОВКА</div>
-                    <div className='button-burger'>СТРАХОВКА</div>
-                    <div className='button-burger'>БЕНЗИН</div>
-                    <div className='button-burger'>ОБСЛУЖИВАНИЕ</div>
+                    <div type='button' className='button-burger'>ПАРКОВКА</div>
+                    <div type='button' className='button-burger'>СТРАХОВКА</div>
+                    <div type='button' className='button-burger'>БЕНЗИН</div>
+                    <div type='button'  className='button-burger'>ОБСЛУЖИВАНИЕ</div>
                 </div>
                 <div className='icons-burger'>
                     <a href="javascript:void(0)">

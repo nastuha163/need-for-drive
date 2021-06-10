@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './additionally.scss';
 
 function Additionally() {
@@ -15,7 +15,7 @@ function Additionally() {
 
             <div className='services-additionally'>
                 <div className='header-additionally'>Дата аренды</div>
-                <div class="wrapper-deta">
+                <div className="wrapper-deta">
                     <div className='header-date-additionally'>
                         <div className='header-date-additionally-text'>С</div>
                         <div className='header-date-additionally-text'>По</div>
@@ -40,13 +40,13 @@ function Additionally() {
             <div className='services-additionally' >
                 <div className='header-additionally'>Доп услуги</div>
                 <div className='checkbox'>
-                    <input type="checkbox" id="check_1" /><label for="check_1">Полный бак, 500р</label>
+                    <input type="checkbox" id="check_1" /><label htmlFor="check_1">Полный бак, 500р</label>
                 </div>
                 <div className='checkbox'>
-                    <input type="checkbox" id="check_2" /><label for="check_2">Детское кресло, 200р</label>
+                    <input type="checkbox" id="check_2" /><label htmlFor="check_2">Детское кресло, 200р</label>
                 </div>
                 <div className='checkbox'>
-                    <input type="checkbox" id="check_3" /><label for="check_3">Правый руль, 1600р</label>
+                    <input type="checkbox" id="check_3" /><label htmlFor="check_3">Правый руль, 1600р</label>
                 </div>
             </div>
         </div>
